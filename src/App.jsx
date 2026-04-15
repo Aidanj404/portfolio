@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 function App() {
   return (
     <div style={styles.app}>
@@ -35,29 +36,45 @@ function Header() {
 
 function Status() {
   return (
-    <div style={styles.card}>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      style={styles.card}
+    >
       <h2 style={styles.cardTitle}>System Status</h2>
       <p>All systems operational</p>
       <p>Focus: Learning React + Web Dev</p>
-    </div>
+    </motion.div>
   );
 }
 
 function About() {
   return (
-    <div id="about" style={styles.card}>
+    <motion.div
+      id="about"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      style={styles.card}
+    >
       <h2 style={styles.cardTitle}>About</h2>
       <p>
         I’m a student developer focused on building real-world tools and learning modern web technologies.
         Currently working on React-based applications and system-focused projects.
       </p>
-    </div>
+    </motion.div>
   );
 }
 
 function Projects() {
   return (
-    <div style={styles.card}>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      style={styles.card}
+    >
       <h2 style={styles.cardTitle}>Projects</h2>
 
       <Project
@@ -78,7 +95,7 @@ function Projects() {
         desc="Small Python scripts to automate repetitive tasks."
         github="https://github.com/Aidanj404/automation-toolkit"
       />
-    </div>
+    </motion.div>
   );
 }
 
@@ -138,11 +155,17 @@ function Project({ title, desc, github, live }) {
 
 function Contact() {
   return (
-    <div id="contact" style={styles.card}>
+    <motion.div
+      id="contact"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      style={styles.card}
+    >
       <h2 style={styles.cardTitle}>Contact</h2>
       <p>Email: yourname@email.com</p>
       <p>GitHub: github.com/yourprofile</p>
-    </div>
+    </motion.div>
   );
 }
 
