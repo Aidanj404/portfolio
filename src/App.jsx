@@ -100,12 +100,34 @@ function Project({ title, desc, github, live }) {
 
       <div style={{ marginTop: "10px" }}>
         {github && (
-          <a href={github} target="_blank" rel="noreferrer" style={styles.link}>
+          <a
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+            style={styles.link}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderBottom = "1px solid #00ff88";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderBottom = "1px solid transparent";
+            }}
+          >
             GitHub
           </a>
         )}
         {live && (
-          <a href={live} target="_blank" rel="noreferrer" style={styles.link}>
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            style={styles.link}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderBottom = "1px solid #00ff88";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderBottom = "1px solid transparent";
+            }}
+          >
             Live
           </a>
         )}
@@ -138,9 +160,9 @@ const styles = {
   },
 
   title: {
-    fontSize: "48px",
+    fontSize: "52px",
     marginBottom: "5px",
-    letterSpacing: "1px",
+    letterSpacing: "2px",
   },
 
   subtitle: {
@@ -157,27 +179,31 @@ const styles = {
   link: {
     color: "#00ff88",
     textDecoration: "none",
-    opacity: 0.7,
-    marginRight: "10px",
+    marginRight: "12px",
+    fontSize: "14px",
+    borderBottom: "1px solid transparent",
   },
 
   grid: {
     display: "grid",
     gridTemplateColumns: "1fr",
-    gap: "20px",
+    gap: "25px",
     maxWidth: "900px",
-    margin: "0 auto",
+    margin: "40px auto",
   },
 
   card: {
-    border: "1px solid #00ff88",
+    border: "1px solid rgba(0,255,136,0.2)",
     padding: "20px",
-    borderRadius: "8px",
-    background: "#111",
+    borderRadius: "12px",
+    background: "linear-gradient(145deg, #0f0f0f, #141414)",
+    boxShadow: "0 0 20px rgba(0,255,136,0.05)",
   },
 
   cardTitle: {
-    marginBottom: "10px",
+    marginBottom: "12px",
+    fontSize: "20px",
+    letterSpacing: "1px",
   },
 
   project: {
