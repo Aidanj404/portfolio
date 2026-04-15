@@ -79,27 +79,33 @@ function Projects() {
 
       <Project
         title="System Monitor"
-        desc="Tracks CPU, RAM usage and system performance in real time."
+        problem="PC performance details were scattered across utilities and logs."
+        solution="Built a real-time React dashboard that visualizes CPU, memory, disk, and network usage in one place."
+        tech="React, Vite, JavaScript"
         github="https://github.com/Aidanj404/system-monitor"
       />
 
       <Project
         title="Portfolio Website"
-        desc="Custom React portfolio with dark UI"
+        problem="I needed a polished personal site to share my work and deploy updates quickly."
+        solution="Created a custom React portfolio with reusable cards, animated sections, and Vercel deployment."
+        tech="React, Vite, CSS, Vercel"
         github="https://github.com/Aidanj404/portfolio"
-        live="https://portfolio-q34lwfh0c-aidanj404s-projects.vercel.app"
+        live="https://portfolio-k66w25e6x-aidanj404s-projects.vercel.app"
       />
 
       <Project
         title="Automation Toolkit"
-        desc="Small Python scripts to automate repetitive tasks."
+        problem="Repeating small tasks was wasting time during development and testing."
+        solution="Built Python scripts to automate file processing, system checks, and task workflows."
+        tech="Python, scripting, automation"
         github="https://github.com/Aidanj404/automation-toolkit"
       />
     </motion.div>
   );
 }
 
-function Project({ title, desc, github, live }) {
+function Project({ title, problem, solution, tech, github, live }) {
   return (
     <div
       style={styles.project}
@@ -115,7 +121,16 @@ function Project({ title, desc, github, live }) {
       }}
     >
       <h3>{title}</h3>
-      <p style={{ opacity: 0.7 }}>{desc}</p>
+
+      <p>
+        <strong>Problem:</strong> {problem}
+      </p>
+      <p>
+        <strong>Solution:</strong> {solution}
+      </p>
+      <p>
+        <strong>Tech:</strong> {tech}
+      </p>
 
       <div style={{ marginTop: "10px" }}>
         {github && (
@@ -155,6 +170,10 @@ function Project({ title, desc, github, live }) {
           </a>
         )}
       </div>
+
+      <p style={{ opacity: 0.6, marginTop: "10px" }}>
+        Learned: State management, component structure, and deployment workflow.
+      </p>
     </div>
   );
 }
