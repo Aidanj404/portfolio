@@ -105,11 +105,13 @@ function Project({ title, desc, github, live }) {
       style={styles.project}
       onMouseEnter={(e) => {
         e.currentTarget.style.border = "1px solid #00ff88";
-        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.transform = "scale(1.03)";
+        e.currentTarget.style.boxShadow = "0 0 15px rgba(0,255,136,0.2)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.border = "1px solid rgba(0, 255, 136, 0.3)";
         e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
       <h3>{title}</h3>
@@ -124,9 +126,11 @@ function Project({ title, desc, github, live }) {
             style={styles.link}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderBottom = "1px solid #00ff88";
+              e.currentTarget.style.opacity = "1";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderBottom = "1px solid transparent";
+              e.currentTarget.style.opacity = "0.7";
             }}
           >
             GitHub
@@ -140,9 +144,11 @@ function Project({ title, desc, github, live }) {
             style={styles.link}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderBottom = "1px solid #00ff88";
+              e.currentTarget.style.opacity = "1";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderBottom = "1px solid transparent";
+              e.currentTarget.style.opacity = "0.7";
             }}
           >
             Live
@@ -186,6 +192,7 @@ const styles = {
     fontSize: "52px",
     marginBottom: "5px",
     letterSpacing: "2px",
+    textShadow: "0 0 10px rgba(0,255,136,0.3)",
   },
 
   subtitle: {
@@ -221,6 +228,7 @@ const styles = {
     borderRadius: "12px",
     background: "linear-gradient(145deg, #0f0f0f, #141414)",
     boxShadow: "0 0 20px rgba(0,255,136,0.05)",
+    marginBottom: "10px",
   },
 
   cardTitle: {
