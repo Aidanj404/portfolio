@@ -1,17 +1,37 @@
 import { motion } from "framer-motion";
+import { Routes, Route, Link, useParams } from "react-router-dom";
+
 function App() {
   return (
     <div style={styles.app}>
       <Header />
 
-      <div style={styles.grid}>
-        <About />
-        <Status />
-        <div id="projects">
-          <Projects />
-        </div>
-        <Contact />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ProjectPage />} />
+      </Routes>
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <div style={styles.grid}>
+      <About />
+      <Status />
+      <Projects />
+      <Contact />
+    </div>
+  );
+}
+
+function ProjectPage() {
+  const { id } = useParams();
+
+  return (
+    <div style={styles.card}>
+      <h2 style={styles.cardTitle}>Project: {id}</h2>
+      <p>Detailed case study coming here...</p>
     </div>
   );
 }
@@ -107,19 +127,20 @@ function Projects() {
 
 function Project({ title, problem, solution, tech, github, live }) {
   return (
-    <div
-      style={styles.project}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.border = "1px solid #00ff88";
-        e.currentTarget.style.transform = "scale(1.03)";
-        e.currentTarget.style.boxShadow = "0 0 15px rgba(0,255,136,0.2)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.border = "1px solid rgba(0, 255, 136, 0.3)";
-        e.currentTarget.style.transform = "scale(1)";
-        e.currentTarget.style.boxShadow = "none";
-      }}
-    >
+    <Link to={`/project/${title}`} style={{ textDecoration: "none", color: "inherit" }}>
+      <div
+        style={styles.project}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.border = "1px solid #00ff88";
+          e.currentTarget.style.transform = "scale(1.03)";
+          e.currentTarget.style.boxShadow = "0 0 15px rgba(0,255,136,0.2)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.border = "1px solid rgba(0, 255, 136, 0.3)";
+          e.currentTarget.style.transform = "scale(1)";
+          e.currentTarget.style.boxShadow = "none";
+        }}
+      >
       <h3>{title}</h3>
 
       <p>
@@ -175,6 +196,7 @@ function Project({ title, problem, solution, tech, github, live }) {
         Learned: State management, component structure, and deployment workflow.
       </p>
     </div>
+    </Link>
   );
 }
 
