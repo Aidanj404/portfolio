@@ -48,8 +48,8 @@ function About() {
     <div id="about" style={styles.card}>
       <h2 style={styles.cardTitle}>About</h2>
       <p>
-        I’m a student developer learning modern web development, building tools,
-        and exploring systems programming.
+        I’m a student developer focused on building real-world tools and learning modern web technologies.
+        Currently working on React-based applications and system-focused projects.
       </p>
     </div>
   );
@@ -57,28 +57,32 @@ function About() {
 
 function Projects() {
   return (
-    <div style={styles.card} id="projects">
+    <div style={styles.card}>
       <h2 style={styles.cardTitle}>Projects</h2>
 
       <Project
         title="System Monitor"
         desc="Tracks CPU, RAM usage and system performance in real time."
+        github="https://github.com/Aidanj404/system-monitor"
       />
 
       <Project
         title="Portfolio Website"
-        desc="Custom React-based portfolio with dark UI and component system."
+        desc="Custom React portfolio with dark UI"
+        github="https://github.com/Aidanj404/portfolio"
+        live="https://portfolio-q34lwfh0c-aidanj404s-projects.vercel.app"
       />
 
       <Project
         title="Automation Toolkit"
         desc="Small Python scripts to automate repetitive tasks."
+        github="https://github.com/Aidanj404/automation-toolkit"
       />
     </div>
   );
 }
 
-function Project({ title, desc }) {
+function Project({ title, desc, github, live }) {
   return (
     <div
       style={styles.project}
@@ -93,6 +97,19 @@ function Project({ title, desc }) {
     >
       <h3>{title}</h3>
       <p style={{ opacity: 0.7 }}>{desc}</p>
+
+      <div style={{ marginTop: "10px" }}>
+        {github && (
+          <a href={github} target="_blank" rel="noreferrer" style={styles.link}>
+            GitHub
+          </a>
+        )}
+        {live && (
+          <a href={live} target="_blank" rel="noreferrer" style={styles.link}>
+            Live
+          </a>
+        )}
+      </div>
     </div>
   );
 }
