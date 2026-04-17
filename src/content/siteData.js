@@ -10,7 +10,7 @@ export const siteData = {
     'Portfolio of a student developer building real projects using React and modern web technologies.',
 
   intro:
-    'I am a student developer focused on learning by building real projects. I am currently working with JavaScript and React while improving step by step through practical work.',
+    'I am a student developer focused on learning by building real projects. I am currently working with JavaScript and React and improving by building and deploying projects.',
 
   about:
     'I enjoy building simple and clean web interfaces and improving them over time. My current focus is strengthening my frontend skills, understanding how real projects are structured, and learning how to turn ideas into working applications.',
@@ -80,7 +80,7 @@ export const projects = [
     category: 'Portfolio',
     year: '2026',
     status: 'In progress',
-    role: 'Designer and developer',
+    role: 'Frontend developer',
 
     description:
       'A personal portfolio built using React to showcase projects and track learning progress.',
@@ -97,7 +97,7 @@ export const projects = [
       'Learned how React components, routing, and deployment work together in a real project.',
 
     outcomes: [
-      'Built and deployed a live portfolio using Vercel',
+      'Built and deployed a portfolio using Vercel',
       'Structured content using reusable data files',
       'Improved understanding of project organization',
     ],
