@@ -1,29 +1,28 @@
 export const siteData = {
-  name: 'Aidan Kumar',
-  role: 'Junior Frontend & Web Developer',
-  email: 'aidan.dev@example.com',
+  name: 'Aidan J',
+  role: 'Student Developer',
   location: 'India',
-  focus: 'Frontend, UI design, and full-stack learning',
-  availableFor: 'Internships, freelance projects, junior roles',
+  focus: 'Frontend development, UI design, and learning full-stack fundamentals',
+  availableFor: 'Learning, building projects, and collaboration',
   seoDescription:
-    'A modern student developer portfolio featuring projects, case studies, skills, and contact details for internships and future jobs.',
+    'Portfolio of a student developer building real projects with React, focusing on clean UI, structured code, and continuous improvement.',
   intro:
-    'I am 16 and just entering the coding field, but I am already focused on building real projects, improving fast, and turning curiosity into strong technical work. This portfolio is designed to grow with me as I learn and ship more.',
+    'I am a student developer focused on learning by building real projects. I am currently improving my skills in JavaScript, React, and modern web development while creating projects that show clear progress over time.',
   about:
     'I am a student developer who enjoys turning ideas into websites and web apps that feel polished, useful, and easy to understand. Right now I am building my fundamentals in JavaScript, React, and modern frontend development while also learning how good developers explain their work, structure projects, and keep improving over time.',
   links: {
-    github: 'https://github.com/yourusername',
-    vercel: 'https://vercel.com/yourusername',
+    github: 'https://github.com/Aidanj404',
+    vercel: 'https://portfolio-cyan-eight-75.vercel.app',
   },
   highlights: [
-    { value: '3+', label: 'Featured projects ready to show' },
-    { value: '100%', label: 'Responsive pages across devices' },
-    { value: '1 place', label: 'To grow your career story' },
+    { value: '3', label: 'Projects built and documented' },
+    { value: 'React', label: 'Main frontend framework' },
+    { value: '16', label: 'Age while building this portfolio' },
   ],
   recruiterPoints: [
-    'You ship projects instead of only following tutorials.',
-    'You can explain what you built, why it matters, and what you learned.',
-    'Your portfolio already has structure for future internships and case studies.',
+    'I focus on building projects instead of only following tutorials.',
+  'I can clearly explain what I build and what I learn from it.',
+  'This portfolio is structured to grow as I improve my skills.',
   ],
   learningNow: [
     'Building stronger React projects with reusable components and routing.',
@@ -40,8 +39,8 @@ export const siteData = {
     },
     {
       period: 'Next',
-      title: 'Internship-ready case studies',
-      description: 'Turning projects into stronger writeups with goals, challenges, and results that employers can scan quickly.',
+      title: 'Improving project depth',
+      description: 'Turning projects into clearer case studies with better explanations and structure.',
     },
     {
       period: 'Future',
@@ -57,7 +56,7 @@ export const projects = [
     title: 'Student Portfolio System',
     category: 'Portfolio',
     year: '2026',
-    status: 'Live foundation',
+    status: 'In progress',
     role: 'Designer and developer',
     description:
       'A multi-page personal portfolio with editable project data, detailed case studies, and a contact flow designed for internships and future jobs.',
@@ -74,8 +73,8 @@ export const projects = [
       'Made the content easy to update from one data file.',
     ],
     links: {
-      live: 'https://your-portfolio.vercel.app',
-      github: 'https://github.com/yourusername/portfolio',
+      live: 'https://portfolio-cyan-eight-75.vercel.app',
+      github: 'https://github.com/Aidanj404/portfolio',
     },
   },
   {
@@ -83,26 +82,12 @@ export const projects = [
     title: 'Task Tracker Dashboard',
     category: 'Web App',
     year: '2026',
-    status: 'Concept project',
+    status: 'Planned',
     role: 'Frontend developer',
     description:
-      'A productivity dashboard concept for students to track assignments, deadlines, and daily focus sessions in one place.',
-    stack: ['React', 'CSS Grid', 'Local Storage', 'JavaScript'],
+      'A productivity dashboard concept for students to track tasks and deadlines.',
     challenge:
-      'Design a student-friendly dashboard that feels simple while still showing enough information to be useful.',
-    solution:
-      'Used a card-based layout, strong visual hierarchy, and lightweight storage patterns to keep the app fast and clear.',
-    learnings:
-      'Small UX choices like grouping, spacing, and empty states matter as much as code when building a useful interface.',
-    outcomes: [
-      'Practiced state management and UI composition.',
-      'Built a cleaner dashboard layout for desktop and mobile.',
-      'Created a project that can evolve into a more complete SaaS idea later.',
-    ],
-    links: {
-      live: 'https://task-tracker-demo.vercel.app',
-      github: 'https://github.com/yourusername/task-tracker-dashboard',
-    },
+      'Design a simple and useful student dashboard.',
   },
   {
     slug: 'developer-links-hub',
