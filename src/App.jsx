@@ -522,7 +522,7 @@ function ProjectCard({ project }) {
       </div>
 
       <div className="tag-grid compact-tags">
-        {project.stack.slice(0, 4).map((item) => (
+        {(project.stack ?? []).slice(0, 4).map((item) => (
           <span className="tag" key={item}>
             {item}
           </span>

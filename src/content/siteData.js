@@ -10,6 +10,7 @@ export const siteData = {
     'I am a student developer focused on learning by building real projects. I am currently improving my skills in JavaScript, React, and modern web development while creating projects that show clear progress over time.',
   about:
     'I am a student developer who enjoys turning ideas into websites and web apps that feel polished, useful, and easy to understand. Right now I am building my fundamentals in JavaScript, React, and modern frontend development while also learning how good developers explain their work, structure projects, and keep improving over time.',
+  email: 'hello@aidanj.dev',
   links: {
     github: 'https://github.com/Aidanj404',
     vercel: 'https://portfolio-cyan-eight-75.vercel.app',
@@ -86,8 +87,22 @@ export const projects = [
     role: 'Frontend developer',
     description:
       'A productivity dashboard concept for students to track tasks and deadlines.',
+    stack: ['React', 'CSS', 'Local Storage'],
     challenge:
       'Design a simple and useful student dashboard.',
+    solution:
+      'Planned a clear task-tracking experience with fast access to progress and deadlines.',
+    learnings:
+      'Learned how to structure state for a dashboard and make key information easy to scan quickly.',
+    outcomes: [
+      'Drafted a clean app layout for productivity use cases.',
+      'Defined a task state model and user flows.',
+      'Prepared the design to support future interactivity.',
+    ],
+    links: {
+      live: 'https://github.com/Aidanj404/task-tracker-dashboard',
+      github: 'https://github.com/Aidanj404/task-tracker-dashboard',
+    },
   },
   {
     slug: 'developer-links-hub',
