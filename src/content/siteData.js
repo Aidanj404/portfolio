@@ -1,83 +1,113 @@
 export const siteData = {
   name: 'Aidan J',
   role: 'Student Developer',
+  email: 'aidanj6583@outlook.com',
   location: 'India',
-  focus: 'Frontend development, UI design, and learning full-stack fundamentals',
-  availableFor: 'Learning, building projects, and collaboration',
+  focus: 'Frontend development and learning full-stack fundamentals',
+  availableFor: 'Learning, building projects, and future opportunities',
+
   seoDescription:
-    'Portfolio of a student developer building real projects with React, focusing on clean UI, structured code, and continuous improvement.',
+    'Portfolio of a student developer building real projects using React and modern web technologies.',
+
   intro:
-    'I am a student developer focused on learning by building real projects. I am currently improving my skills in JavaScript, React, and modern web development while creating projects that show clear progress over time.',
+    'I am a student developer focused on learning by building real projects. I am currently working with JavaScript and React while improving step by step through practical work.',
+
   about:
-    'I am a student developer who enjoys turning ideas into websites and web apps that feel polished, useful, and easy to understand. Right now I am building my fundamentals in JavaScript, React, and modern frontend development while also learning how good developers explain their work, structure projects, and keep improving over time.',
-  email: 'hello@aidanj.dev',
+    'I enjoy building simple and clean web interfaces and improving them over time. My current focus is strengthening my frontend skills, understanding how real projects are structured, and learning how to turn ideas into working applications.',
+
   links: {
     github: 'https://github.com/Aidanj404',
-    vercel: 'https://portfolio-cyan-eight-75.vercel.app',
+    portfolio: 'https://portfolio-88s9mt81h-aidanj404s-projects.vercel.app',
   },
+
   highlights: [
-    { value: '3', label: 'Projects built and documented' },
-    { value: 'React', label: 'Main frontend framework' },
-    { value: '16', label: 'Age while building this portfolio' },
+    { value: '2', label: 'Projects built' },
+    { value: 'React', label: 'Primary framework' },
+    { value: '16', label: 'Age while learning development' },
   ],
+
   recruiterPoints: [
-    'I focus on building projects instead of only following tutorials.',
-  'I can clearly explain what I build and what I learn from it.',
-  'This portfolio is structured to grow as I improve my skills.',
+    'Builds projects while learning instead of only following tutorials.',
+    'Understands basic React structure and deployment workflow.',
+    'Portfolio is structured to improve over time with better projects.',
   ],
+
   learningNow: [
-    'Building stronger React projects with reusable components and routing.',
-    'Writing cleaner JavaScript and understanding APIs more deeply.',
-    'Improving design taste so projects look intentional, not generic.',
-    'Learning how deployment, GitHub workflows, and Vercel fit into real work.',
+    'Improving React projects with routing and reusable components',
+    'Writing cleaner JavaScript and understanding core concepts',
+    'Building projects from scratch instead of following tutorials',
+    'Understanding Git and deployment workflows',
   ],
-  skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vite', 'Responsive Design', 'Git', 'GitHub', 'Vercel', 'Figma'],
+
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Vite',
+    'Responsive Design',
+    'Git',
+    'GitHub',
+    'Vercel',
+  ],
+
   timeline: [
     {
       period: 'Now',
       title: 'Learning by building',
-      description: 'Creating portfolio projects, UI experiments, and practical websites to strengthen fundamentals.',
+      description:
+        'Working on portfolio projects and small applications to improve fundamentals.',
     },
     {
       period: 'Next',
-      title: 'Improving project depth',
-      description: 'Turning projects into clearer case studies with better explanations and structure.',
+      title: 'Stronger projects',
+      description:
+        'Building more complete projects with better structure and real use cases.',
     },
     {
       period: 'Future',
-      title: 'Professional growth',
-      description: 'Using this site as the base for freelance work, internships, and eventually a full developer resume.',
+      title: 'Career growth',
+      description:
+        'Preparing for internships and real-world development work.',
     },
   ],
-}
+};
 
 export const projects = [
   {
     slug: 'student-portfolio-system',
-    title: 'Student Portfolio System',
+    title: 'Portfolio Website',
     category: 'Portfolio',
     year: '2026',
     status: 'In progress',
     role: 'Designer and developer',
+
     description:
-      'A multi-page personal portfolio with editable project data, detailed case studies, and a contact flow designed for internships and future jobs.',
-    stack: ['React', 'React Router', 'Vite', 'CSS', 'Framer Motion'],
+      'A personal portfolio built using React to showcase projects and track learning progress.',
+
+    stack: ['React', 'React Router', 'Vite', 'CSS'],
+
     challenge:
-      'Create a website that feels professional early in a coding journey without pretending to have years of experience.',
+      'Build a clean and structured portfolio while still learning core frontend concepts.',
+
     solution:
-      'Built a clean multi-page structure with honest writing, strong visual design, and reusable data-driven sections so the site can grow over time.',
+      'Created reusable components, added routing, and structured project data to make the site scalable.',
+
     learnings:
-      'A good portfolio is not about sounding advanced. It is about showing progress clearly and making updates easy.',
+      'Learned how React components, routing, and deployment work together in a real project.',
+
     outcomes: [
-      'Created reusable project cards and dynamic detail pages.',
-      'Added a contact experience without requiring a backend.',
-      'Made the content easy to update from one data file.',
+      'Built and deployed a live portfolio using Vercel',
+      'Structured content using reusable data files',
+      'Improved understanding of project organization',
     ],
+
     links: {
-      live: 'https://portfolio-cyan-eight-75.vercel.app',
+      live: 'https://portfolio-88s9mt81h-aidanj404s-projects.vercel.app',
       github: 'https://github.com/Aidanj404/portfolio',
     },
   },
+
   {
     slug: 'task-tracker-dashboard',
     title: 'Task Tracker Dashboard',
@@ -85,25 +115,20 @@ export const projects = [
     year: '2026',
     status: 'Planned',
     role: 'Frontend developer',
+
     description:
-      'A productivity dashboard concept for students to track tasks and deadlines.',
+      'A planned dashboard to help students manage tasks and deadlines.',
+
     stack: ['React', 'CSS', 'Local Storage'],
+
     challenge:
-      'Design a simple and useful student dashboard.',
-    solution:
-      'Planned a clear task-tracking experience with fast access to progress and deadlines.',
-    learnings:
-      'Learned how to structure state for a dashboard and make key information easy to scan quickly.',
-    outcomes: [
-      'Drafted a clean app layout for productivity use cases.',
-      'Defined a task state model and user flows.',
-      'Prepared the design to support future interactivity.',
-    ],
+      'Design a simple and useful dashboard for managing daily tasks.',
+
     links: {
-      live: 'https://github.com/Aidanj404/task-tracker-dashboard',
       github: 'https://github.com/Aidanj404/task-tracker-dashboard',
     },
   },
+
   {
     slug: 'developer-links-hub',
     title: 'Developer Links Hub',
@@ -111,25 +136,32 @@ export const projects = [
     year: '2025',
     status: 'Shipped',
     role: 'Frontend developer',
+
     description:
-      'A branded profile hub for sharing GitHub, project demos, social links, and contact details in a single polished page.',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+      'A simple personal links page to share GitHub and other profiles in one place.',
+
+    stack: ['HTML', 'CSS', 'JavaScript'],
+
     challenge:
-      'Build something lightweight that loads fast, looks memorable, and gives visitors a clear next step.',
+      'Create a lightweight page that loads fast and looks clean.',
+
     solution:
-      'Focused on a bold visual style, responsive layout, and short copy that helps people reach the right destination quickly.',
+      'Used simple layout and responsive design to keep it minimal and usable.',
+
     learnings:
-      'Fast, focused sites can still feel premium when typography, spacing, and color choices are handled carefully.',
+      'Improved understanding of layout, spacing, and basic deployment.',
+
     outcomes: [
-      'Improved understanding of layout and responsive design.',
-      'Created a practical asset for sharing work online.',
-      'Learned how deployment on Vercel fits into a frontend workflow.',
+      'Built a responsive static page',
+      'Deployed using Vercel',
+      'Created a simple shareable profile page',
     ],
+
     links: {
       live: 'https://developer-links-hub.vercel.app',
-      github: 'https://github.com/yourusername/developer-links-hub',
+      // ADD GitHub only if it actually exists
     },
   },
-]
+];
 
 export const projectCategories = ['All', ...new Set(projects.map((project) => project.category))]
